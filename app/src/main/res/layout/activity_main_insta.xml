@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainInsta"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:background="@color/oceanGreen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/aclonica"
+                android:text="iSaver"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="14dp"
+                android:src="@drawable/istoraicon"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativelayout"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="80dp"
+
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="0"
+            android:background="#ffcc33"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/IgUrl"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/link"
+                android:hint="   Paste url Here"
+                android:paddingStart="12dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="18sp">
+            </EditText>
+
+
+            <ImageView
+                android:id="@+id/IgPaste"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/black"
+                android:padding="10dp"
+                android:src="@drawable/pst" />
+
+            <ImageView
+                android:id="@+id/IgDownload"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:src="@drawable/dowloaditem" />
+
+
+        </LinearLayout>
+
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-9422323438961177/1947937805"
+            android:layout_above="@+id/bottom_nav">
+        </com.google.android.gms.ads.AdView>
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/oceanGreen"
+            app:itemBackground="@color/oceanGreen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/menu" />
+
+        </RelativeLayout>
+
+</layout>

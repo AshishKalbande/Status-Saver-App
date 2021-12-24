@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/StatusSaver"
+        android:icon="@drawable/w_storasaver"
+        android:title="Stora Saver"
+        android:color="@color/black"
+        />
+
+    <item
+        android:id="@+id/iSaver"
+        android:title="iSaver"
+        android:icon="@drawable/isaver"
+        android:color="@color/white"/>
+
+    <item
+        android:id="@+id/downloaded"
+        android:title="Downloaded"
+        android:icon="@drawable/downloadeds"
+        android:color="@color/white"/>
+
+
+
+
+</menu>

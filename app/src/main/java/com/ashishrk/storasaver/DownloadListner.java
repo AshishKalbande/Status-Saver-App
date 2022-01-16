@@ -1,17 +1,12 @@
 package com.ashishrk.storasaver;
 
 import android.app.Dialog;
-import android.content.Context;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -21,7 +16,6 @@ import java.nio.channels.FileChannel;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 import java.util.Random;
-import java.util.logging.SimpleFormatter;
 
 public class DownloadListner {
 
